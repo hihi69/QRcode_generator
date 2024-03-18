@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRコードジェネレーター</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <p>URLまたはテキストを入力してください</p>
+      <input type="text" placeholder="Text or URL" id="qrText" />
+
+      <div id="imgBox">
+        <img src="" id="qrImage" />
+      </div>
+      <div id="SNSicons">
+        <a
+          href="http://www.facebook.com/share"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          ><i class="ph ph-facebook-logo"></i
+        ></a>
+        <a
+          href="http://twitter.com/share.php"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          ><i class="ph ph-twitter-logo"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="ph ph-instagram-logo"></i
+        ></a>
+      </div>
+      <button onclick="generateQR()">QRコードを生成</button>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
